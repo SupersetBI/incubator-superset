@@ -27,7 +27,8 @@ from superset.connectors.connector_registry import ConnectorRegistry
 from superset.models import core as models
 from superset.models.slice import Slice
 
-BASE_URL = "https://github.com/apache-superset/examples-data/blob/master/"
+# BASE_URL = "https://github.com/apache-superset/examples-data/blob/master/"
+BASE_URL = "http://10.10.19.204:8000/"
 
 # Shortcuts
 DB = models.Database

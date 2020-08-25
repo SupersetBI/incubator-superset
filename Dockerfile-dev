@@ -24,6 +24,7 @@ COPY ./requirements* ./docker/requirements* /app/
 
 USER root
 RUN cd /app \
+    && pip config set global.index-url https://mirrors.cloud.tencent.com/pypi/simple \
     && pip install -e . \
     && pip install --no-cache -r requirements.txt -r requirements-dev.txt \
     && pip install --no-cache -r requirements-extra.txt \
