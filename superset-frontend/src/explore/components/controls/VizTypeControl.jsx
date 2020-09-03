@@ -97,6 +97,7 @@ const DEFAULT_ORDER = [
   'para',
   'iframe',
   'country_map',
+  'echarts_multiple_y_axis'
 ];
 
 const typesWithDefaultOrder = new Set(DEFAULT_ORDER);

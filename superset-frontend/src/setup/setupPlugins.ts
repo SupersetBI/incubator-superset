@@ -32,6 +32,7 @@ import DeckScreengrid from '../explore/controlPanels/DeckScreengrid';
 import FilterBox from '../explore/controlPanels/FilterBox';
 import Separator from '../explore/controlPanels/Separator';
 import TimeTable from '../explore/controlPanels/TimeTable';
+import EchartsMultipleYAxis from '../explore/controlPanels/EchartsMultipleYAxis';
 
 export default function setupPlugins() {
   new MainPreset().register();
@@ -49,7 +50,8 @@ export default function setupPlugins() {
     .registerValue('deck_path', DeckPath)
     .registerValue('deck_polygon', DeckPolygon)
     .registerValue('deck_scatter', DeckScatter)
-    .registerValue('deck_screengrid', DeckScreengrid);
+    .registerValue('deck_screengrid', DeckScreengrid)
+    .registerValue('echarts_multiple_y_axis', EchartsMultipleYAxis);
 
   setupPluginsExtra();
 }
